@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --text-color: #97FEED;
+    --bg-color: #071952;
+    --main-color: #35A29F;
+    --h1-font: 4rem;
+    --h5-font: 2rem;
+    --p-font: 1.5rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 8px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--text-color);
+
+}
+
+.container-left {
+    display: flex;
+
+}
+
+.container-left a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all .50s ease;
+}
+
+.container-left a:hover {
+    color: var(--main-color);
+}
+
+.container-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container-right a:first-child {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+}
+
+.container-right a {
+    font-size: 20px;
+    color: var(--main-color);
+    margin: 5px;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.container-right a:hover {
+    color: var(--text-color);
+    transform: translateY(-3px);
+}
+
+.libr {
+    padding:156px 8% 7%;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('pic1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.libr h5 {
+    font-size: var(--h5-font);
+    color: aqua;
+}
+
+.libr h1 {
+    font-size: var(--h1-font);
+    margin: 30px auto;
+    text-transform: capitalize;
+}
+
+
+.libr p {
+    font-size: var(--p-font);
+    font-weight: 600;
+    line-height: 60px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+
+.libr-store
+{
+   padding: 34px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-image: linear-gradient(90deg, rgb(48 93 91), rgb(159 102 102));
+    color: #ffffff;
+    row-gap: 50px;
+}
+.libr-store a , .libr a {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    border: 3px solid #35A29F;
+    transition: all .50s ease;
+    font-weight: 700;
+    margin-top: 50px;
+
+}
+
+.libr-store a:hover , .libr a:hover{
+    color: var(--text-color);
+    background-color:transparent;
+    color: rgb(0, 204, 255);
+}
+header.sticky   
+{
+    padding: 8px 17%;
+    background:  transparent;
+    backdrop-filter: blur(35px);
+}
+
+.row-img
+{
+    overflow: hidden;
+    width: 200px;
+  
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+   
+}
+.row-img img
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.50s ease;
+}
+
+.row-img img:hover{
+    transform: scale(1.2);
+}
+.libr-store h4
+{
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.50s ease;
+}
+.libr-store h4:hover
+{
+    color: brown;
+}
